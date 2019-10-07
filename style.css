@@ -1,0 +1,25 @@
+body {
+    background: green;
+}
+h1 {
+    color: Turquoise;
+    text-decoration: underline;
+    font-family: "Comic Sans MS";
+    font-style: italic;
+}
+p {
+    font-family: "Comic Sans MS";
+    font-variant: small-caps;
+}
+nav {
+    background: #420420;
+    display: inline-block;
+    width: 100%;
+    font-size: 25px;
+}
+#topnav a {
+    color:white;
+    text-align: center;
+    padding: 4px;
+    float: left;
+}
