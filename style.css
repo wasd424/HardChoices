@@ -1,25 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One&display=swap');
+
 body {
-    background: green;
+    background: oldlace;
+    font-family: 'Titan One';
+    margin: 0px;
 }
 h1 {
     color: Turquoise;
-    text-decoration: underline;
     font-family: "Comic Sans MS";
     font-style: italic;
 }
 p {
-    font-family: "Comic Sans MS";
     font-variant: small-caps;
 }
-nav {
-    background: #420420;
+.navWrapper {
     display: inline-block;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
+    background: darkgreen;
+    padding: 0px;
+    margin: 0px;
 }
-#topnav a {
+.homeWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.navWrapper a {
     color:white;
     text-align: center;
     padding: 4px;
     float: left;
+}
+.navWrapper a:hover {
+    background: oldlace;
+    color: black;
+}
+
+.navWrapper .active {
+    background: lightgreen;
+}
+
+.navLogo {
+    float: left;
+    text-align: center;
+    width: 34%;
+}
+.navButtons {
+    float: left;
+    width: 33%;
 }

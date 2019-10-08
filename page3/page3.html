@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Third Page</title>
+    <link href="../style.css" rel=stylesheet type=text/css>
+</head>
+<body id="abody">
+    <div class= "page3Wrapper">
+    	<div class="navWrapper">
+        	<div class="navButtons">
+        		<a href="../index.html" id="navhome" class="active">Home</a>
+        		<a href="../page2/page2.html" id="navpage2">Page 2</a>
+        		<a href="page3.html" id="navpage3">Page 3</a>
+        		<a href="../page4/page4.html" id="navpage4">Page 4</a>
+            </div>
+            <div class="navLogo">
+                <p style="font-size: 20">:)</p>
+            </div>
+    	</div>
+    	<h1>The Third Page</h1>
+        <p onmousedown="changeColor()">Click the text I dare you</p>
+        
+        <script>
+            function getRandomColor() {
+  				var letters = '0123456789ABCDEF';
+  				var color = '#';
+  				for (var i = 0; i < 6; i++) {
+    				color += letters[Math.floor(Math.random() * 16)];
+  				}
+  				return color;
+			}
+        	function changeColor() {
+                	document.getElementById("abody").style.background = getRandomColor();
+            }
+        </script>
+    </div>
+</body>
+</html>
