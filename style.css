@@ -38,6 +38,10 @@ p {
     color: black;
 }
 
+canvas {
+    width: 100%;
+}
+
 .navWrapper .active {
     background: lightgreen;
 }

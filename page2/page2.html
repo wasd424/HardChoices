@@ -21,7 +21,13 @@
         <button onclick="giveAlert()">Click for free VBucks</button>
         <script>
         	function giveAlert() {
-                alert("You have a virus. \n Please delete the virus folder named System32.");
+                for (var i = 0; i<1000;i++){
+                    var sound = new Audio("../alarm.mp3");
+					sound.play();
+                	alert("You have a virus. \n Please delete the virus folder named System32.");
+                }
+            
+                
             }
         </script>
     </div>
