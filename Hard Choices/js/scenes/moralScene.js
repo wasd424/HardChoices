@@ -10,10 +10,10 @@ var moralScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('background', 'assets/BackgroundStreet.png');
+        this.load.image('background', 'assets/bg_1.png');
         this.load.image('text21', 'assets/text21.png');
-        this.load.image('moral1', 'assets/moral_one.png');
-        this.load.image('moral2', 'assets/moral_two.png');
+        this.load.image('moral1', 'assets/text43.png');
+        this.load.image('moral2', 'assets/text44.png');
 
 
     },

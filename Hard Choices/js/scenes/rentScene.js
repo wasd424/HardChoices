@@ -10,10 +10,10 @@ var rentScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('background', 'assets/BackgroundStreet.png');
-        this.load.image('dontPayRent', 'assets/dontPayRent.png');
-        this.load.image('payRent', 'assets/payRent.png');
-        this.load.image('eviction', 'assets/eviction.png');
+        this.load.image('background', 'assets/bg_1.png');
+        this.load.image('dontPayRent', 'assets/text41.png');
+        this.load.image('payRent', 'assets/text40.png');
+        this.load.image('eviction', 'assets/text42.png');
     },
 
     create: function ()

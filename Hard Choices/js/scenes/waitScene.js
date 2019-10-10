@@ -9,8 +9,8 @@ var waitScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('wait', 'assets/wait.png');
-        this.load.image('background', 'assets/BackgroundStreet.png');
+        this.load.image('wait', 'assets/text45.png');
+        this.load.image('background', 'assets/bg_1.png');
     },
 
     create: function ()

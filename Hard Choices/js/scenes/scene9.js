@@ -10,11 +10,11 @@ var scene9 = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('background2', 'assets/backgorund46.png');
-        this.load.image('publictrans', 'assets/publictrans.png');
-        this.load.image('callfriend', 'assets/callfriend.png');
-        this.load.image('friendcancels', 'assets/friendcancels.png');
-        this.load.image('frienddrives', 'assets/frienddrives.png');
+        this.load.image('background2', 'assets/bg_2.png');
+        this.load.image('publictrans', 'assets/text34.png');
+        this.load.image('callfriend', 'assets/text23.png');
+        this.load.image('friendcancels', 'assets/text35.png');
+        this.load.image('frienddrives', 'assets/text36.png');
 
 
     },

@@ -12,7 +12,7 @@ var scene3 = new Phaser.Class({
     {
         this.load.image('text12', 'assets/text12.png');
         this.load.image('text11', 'assets/text11.png');
-        this.load.image('background', 'assets/BackgroundStreet.png');
+        this.load.image('background', 'assets/bg_1.png');
     },
 
     create: function ()
