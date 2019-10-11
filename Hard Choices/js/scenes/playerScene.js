@@ -50,11 +50,11 @@ var playerScene = new Phaser.Class({
         if(this.cursors.right.isDown) {
             this.player.anims.resume();
             this.player.flipX = false;
-            this.player.x += 5;
+            this.player.x += 3;
         } else if (this.cursors.left.isDown) {
             this.player.anims.resume();
             this.player.flipX = true;
-            this.player.x -= 5;
+            this.player.x -= 3;
         } else {
             this.player.anims.pause();
         }

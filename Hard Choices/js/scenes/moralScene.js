@@ -15,7 +15,6 @@ var moralScene = new Phaser.Class({
         this.load.image('moral1', 'assets/text43.png');
         this.load.image('moral2', 'assets/text44.png');
 
-
     },
 
     create: function ()

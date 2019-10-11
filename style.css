@@ -6,9 +6,9 @@ body {
     margin: 0px;
 }
 h1 {
-    color: Turquoise;
     font-family: "Comic Sans MS";
     font-style: italic;
+    margin: 100px;
 }
 p {
     font-variant: small-caps;
@@ -54,4 +54,7 @@ canvas {
 .navButtons {
     float: left;
     width: 33%;
+}
+.gameWrapper {
+    text-align:center;
 }
