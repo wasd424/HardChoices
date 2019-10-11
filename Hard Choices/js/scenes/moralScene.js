@@ -10,10 +10,10 @@ var moralScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('background', 'assets/bg_1.png');
-        this.load.image('text21', 'assets/text21.png');
-        this.load.image('moral1', 'assets/text43.png');
-        this.load.image('moral2', 'assets/text44.png');
+        //this.load.image('bg_1', 'assets/bg_1.png');
+        //this.load.image('text21', 'assets/text21.png');
+        //this.load.image('moral1', 'assets/text43.png');
+        //this.load.image('moral2', 'assets/text44.png');
 
     },
 
@@ -23,7 +23,7 @@ var moralScene = new Phaser.Class({
 
         console.log("moralScene");
         currentScene = 101;
-        this.background = this.add.sprite(0,0, 'background');
+        this.background = this.add.sprite(0,0, 'bg_1');
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 

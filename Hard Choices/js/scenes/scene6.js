@@ -10,20 +10,20 @@ var scene6 = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('callfriend', 'assets/text23.png');
-        this.load.image('text10', 'assets/text10.png');
-        this.load.image('background2', 'assets/bg_2.png');
-        this.load.image('text16', 'assets/text16.png');
-        this.load.image('buycar', 'assets/text24.png');
-        this.load.image('trycar', 'assets/text25.png');
-        this.load.image('getloan', 'assets/text26.png');
-        this.load.image('takecar', 'assets/text27.png');
+        //this.load.image('callfriend', 'assets/text23.png');
+        //this.load.image('text10', 'assets/text10.png');
+        //this.load.image('bg_2', 'assets/bg_2.png');
+        //this.load.image('text16', 'assets/text16.png');
+        //this.load.image('buycar', 'assets/text24.png');
+        //this.load.image('trycar', 'assets/text25.png');
+        //this.load.image('getloan', 'assets/text26.png');
+        //this.load.image('takecar', 'assets/text27.png');
     },
 
     create: function ()
     {
         currentScene = 6;
-        this.bg = this.add.sprite(0,0, 'background2');
+        this.bg = this.add.sprite(0,0, 'bg_2');
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
         console.log("scene6");

@@ -10,12 +10,12 @@ var scene5 = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('officebg', 'assets/bg_3.png');
-        this.load.image('text15', 'assets/text15.png');
-        this.load.image('text18', 'assets/text18.png');
-        this.load.image('text14', 'assets/text14.png');
-        this.load.spritesheet('boss', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
-        this.load.spritesheet('boss2', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
+        //this.load.image('bg_3', 'assets/bg_3.png');
+        //this.load.image('text15', 'assets/text15.png');
+        //this.load.image('text18', 'assets/text18.png');
+        //this.load.image('text14', 'assets/text14.png');
+        //this.load.spritesheet('boss', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
+        //this.load.spritesheet('boss2', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
     },
 
     create: function ()
@@ -24,7 +24,7 @@ var scene5 = new Phaser.Class({
 
         console.log("scene5");
 
-        this.officebg = this.add.sprite(0,0, 'officebg');
+        this.officebg = this.add.sprite(0,0, 'bg_3');
         this.officebg.setOrigin(0,0);
         this.officebg.setScale(0.5);
 

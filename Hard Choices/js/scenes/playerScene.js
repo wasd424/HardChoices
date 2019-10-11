@@ -50,11 +50,11 @@ var playerScene = new Phaser.Class({
         if(this.cursors.right.isDown) {
             this.player.anims.resume();
             this.player.flipX = false;
-            this.player.x += 3;
+            this.player.x += 4;
         } else if (this.cursors.left.isDown) {
             this.player.anims.resume();
             this.player.flipX = true;
-            this.player.x -= 3;
+            this.player.x -= 4;
         } else {
             this.player.anims.pause();
         }
@@ -85,10 +85,10 @@ var playerScene = new Phaser.Class({
             }
         }
         if(this.player.x >= 640){
-            this.player.x -= 5;
+            this.player.x -= 4;
         }
          if(this.player.x <= 0){
-            this.player.x += 5;
+            this.player.x += 4;
         }
 
         this.scene.bringToTop();

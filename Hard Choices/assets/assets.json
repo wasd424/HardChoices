@@ -1,0 +1,74 @@
+{
+    "image": {
+        "text1": "assets/text1.png",
+        "text2": "assets/text2.png",
+        "text3": "assets/text3.png",
+        "text4": "assets/text4.png",
+        "text5": "assets/text5.png",
+        "text6": "assets/text6.png",
+        "text7": "assets/text7.png",
+        "text8": "assets/text8.png",
+        "text9": "assets/text9.png",
+        "text10": "assets/text10.png",
+        "text11": "assets/text11.png",
+        "text12": "assets/text12.png",
+        "text13": "assets/text13.png",
+        "text14": "assets/text14.png",
+        "text15": "assets/text15.png",
+        "text16": "assets/text16.png",
+        "text17": "assets/text17.png",
+        "text18": "assets/text18.png",
+        "text19": "assets/text19.png",
+        "text20": "assets/text20.png",
+        "text21": "assets/text21.png",
+        "text22": "assets/text22.png",
+        "callfriend": "assets/text23.png",
+        "buycar": "assets/text24.png",
+        "trycar": "assets/text25.png",
+        "getloan": "assets/text26.png",
+        "takecar": "assets/text27.png",
+        "carbroke": "assets/text28.png",
+        "gottowork": "assets/text29.png",
+        "misswork": "assets/text30.png",
+        "fixcar": "assets/text31.png",
+        "noloan": "assets/text32.png",
+        "gotloan": "assets/text33.png",
+        "publictrans": "assets/text34.png",
+        "friendcancels": "assets/text35.png",
+        "frienddrives": "assets/text36.png",
+        "fired": "assets/text37.png",
+        "highpay": "assets/text38.png",
+        "lowpay": "assets/text39.png",
+        "payRent": "assets/text40.png",
+        "dontPayRent": "assets/text41.png",
+        "eviction": "assets/text42.png",
+        "moral1": "assets/text43.png",
+        "moral2": "assets/text44.png",
+        "wait": "assets/text45.png",
+        "title": "assets/title.png",
+        "bg_1": "assets/bg_1.png",
+        "bg_2": "assets/bg_2.png",
+        "bg_3": "assets/bg_3.png",
+        "noMoney": "assets/nomoney.png",
+        "intro": "assets/intro.png"
+    },
+    "svg": {
+        
+    },
+    "audio": {
+        
+    },
+    "atlas": {
+        
+    },
+
+    "spritesheet": {
+        "player" : ["assets/player.png", { "frameWidth": 32, "frameHeight": 48 }],
+        "boss" : ["assets/bossman.png", { frameWidth: 274, frameHeight: 256, endFrame: 2}],
+        "boss2" : ["assets/bossman.png", { frameWidth: 274, frameHeight: 256, endFrame: 2}]
+        
+    },
+    "xml": {
+        
+    }
+}

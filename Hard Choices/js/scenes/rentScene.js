@@ -10,10 +10,10 @@ var rentScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('background', 'assets/bg_1.png');
-        this.load.image('dontPayRent', 'assets/text41.png');
-        this.load.image('payRent', 'assets/text40.png');
-        this.load.image('eviction', 'assets/text42.png');
+        //this.load.image('bg_1', 'assets/bg_1.png');
+        //this.load.image('dontPayRent', 'assets/text41.png');
+        //this.load.image('payRent', 'assets/text40.png');
+        //this.load.image('eviction', 'assets/text42.png');
     },
 
     create: function ()
@@ -27,7 +27,7 @@ var rentScene = new Phaser.Class({
         console.log("rentScene");
         console.log(hasLoan);
         currentScene = 100; 
-        this.background = this.add.sprite(0,0, 'background');
+        this.background = this.add.sprite(0,0, 'bg_1');
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 

@@ -10,7 +10,7 @@ var uiScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('noMoney', 'assets/noMoney.png');
+        //this.load.image('noMoney', 'assets/nomoney.png');
     },
 
     create: function ()
