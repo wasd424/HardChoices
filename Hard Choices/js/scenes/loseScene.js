@@ -10,8 +10,8 @@ var loseScene = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('bg_1', 'assets/bg_1.png');
-        //this.load.image('text21', 'assets/text21.png');
+        this.load.image('bg_1', 'assets/bg_1.png');
+        this.load.image('text21', 'assets/text21.png');
 
     },
 

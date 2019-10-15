@@ -10,8 +10,8 @@ var scene1 = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('text5', 'assets/text5.png');
-        //this.load.image('bg_1', 'assets/bg_1.png');
+        this.load.image('text5', 'assets/text5.png');
+        this.load.image('bg_1', 'assets/bg_1.png');
     },
 
     create: function ()

@@ -10,11 +10,11 @@ var scene7 = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('bg_2', 'assets/bg_2.png');
-        //this.load.image('text28', 'assets/text28.png');
-        //this.load.image('text29', 'assets/text29.png');
-        //this.load.image('text30', 'assets/text30.png');
-        //this.load.image('text31', 'assets/text31.png');
+        this.load.image('bg_2', 'assets/bg_2.png');
+        this.load.image('text28', 'assets/text28.png');
+        this.load.image('text29', 'assets/text29.png');
+        this.load.image('text30', 'assets/text30.png');
+        this.load.image('text31', 'assets/text31.png');
     },
 
     create: function ()

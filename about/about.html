@@ -11,28 +11,31 @@
         		<a href="../index.html" id="navhome">Home</a>
         		<a href="../purpose/purpose.html" id="navpage2">Purpose</a>
         		<a href="about.html" id="navpage3" class="active">About</a>
-        		<a href="../page4/page4.html" id="navpage4">Page 4</a>
             </div>
             <div class="navLogo">
-                <p style="font-size: 20">:)</p>
+                Hard Choices
             </div>
     	</div>
-    	<h1>The Third Page</h1>
-        <p onmousedown="changeColor()">Click the text I dare you</p>
+        <div class="p3ContentWrapper" class="main">
+    		<h1>About The Game</h1>
+           	<h3>Who Made it?</h3>
+            <div class="p3innerContent">
+            	<p>The game was made by:</p>
+            	<ul>
+                	<li>JC Z.</li>
+                	<li>Kirin C.</li>
+                	<li>Ryken T.</li>
+                	<li>Ian W.</li>
+            	</ul>
+            </div>
+            <h3>When was it made?</h3>
+            <div class="p3innerContent">
+            	<p>
+                	It was made during the Experimental Game Design class at D.tech with the Oracle Education Foundation.
+            	</p>
+            </div>
+        </div>
         
-        <script>
-            function getRandomColor() {
-  				var letters = '0123456789ABCDEF';
-  				var color = '#';
-  				for (var i = 0; i < 6; i++) {
-    				color += letters[Math.floor(Math.random() * 16)];
-  				}
-  				return color;
-			}
-        	function changeColor() {
-                	document.getElementById("abody").style.background = getRandomColor();
-            }
-        </script>
     </div>
 </body>
 </html>

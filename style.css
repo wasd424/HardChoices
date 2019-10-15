@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
-
 body {
     background: oldlace;
-    font-family: 'Alfa Slab One';
+    font-family: 'Comic Sans MS';
     margin: 0px;
 }
 
 p {
     font-variant: small-caps;
 }
+
+.main {
+    margin-top: 50px;
+}
 .navWrapper {
+    position: fixed;
     display: inline-block;
     width: 100%;
     font-size: 20px;
     background: darkgreen;
     padding: 0px;
     margin: 0px;
+    top: 0;
 }
 .homeWrapper {
     position: absolute;
@@ -48,10 +52,21 @@ canvas {
     margin: 100px;
 }
 
+.p3ContentWrapper {
+    margin: 20px;
+}
+
+.p3innerContent {
+    margin: 30px;
+}
+
 .navLogo {
+    color: white;
     float: left;
+    height: 30px;
     text-align: center;
     width: 34%;
+    margin: 0px;
 }
 .navButtons {
     float: left;

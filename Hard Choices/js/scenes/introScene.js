@@ -9,7 +9,7 @@ var introScene = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('intro', 'assets/intro.png');
+        this.load.image('intro', 'assets/intro.png');
     },
 
     create: function ()

@@ -27,7 +27,7 @@ let config = {
     type: Phaser.AUTO, 
     width: 640,
     height: 360,
-    scene: [bootScene, preload, titleScene, introScene, uiScene, playerScene, scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9, scene10, scene11, loseScene, rentScene, waitScene, moralScene]
+    scene: [titleScene, introScene, uiScene, playerScene, scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9, scene10, scene11, loseScene, rentScene, waitScene, moralScene]
 };
 
 // create a new game, pass the configuration
