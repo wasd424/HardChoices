@@ -11,11 +11,12 @@ var bootScene = new Phaser.Class({
     {
         console.log("Boot started");
         this.load.spritesheet('loading', 'assets/loading.png', { frameWidth: 1154, frameHeight: 570, endFrame: 2});
+        console.log("Boot started2");
     },
 
     create: function ()
     {
-        console.log("Boot complete");
+        alert("Boot complete");
         this.scene.start('preload');
     }
 });

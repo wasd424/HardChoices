@@ -9,7 +9,7 @@ var preload = new Phaser.Class({
 
     preload: function ()
     {
-        console.log("Preloader starting");
+        alert("Preloader starting");
         
         //Setup and play loading animation
         var bgConfig = {
@@ -25,7 +25,7 @@ var preload = new Phaser.Class({
         this.bg.anims.play('load');
         
         //Load text boxes
-        for (var i = 1; i < 46 i++) {
+        for (var i = 1; i < 46; i++) {
             this.load.image('text'+i, 'assets/text'+ i + '.png');
         }
         
@@ -42,6 +42,7 @@ var preload = new Phaser.Class({
         this.load.spritesheet('player', 'assets/player.png', { frameWidth: 64, frameHeight: 102, endFrame: 3});
         this.load.spritesheet('boss', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
         this.load.spritesheet('boss2', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
+        
     },
 
     create: function ()
