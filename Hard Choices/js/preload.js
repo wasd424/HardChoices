@@ -10,7 +10,7 @@ var preload = new Phaser.Class({
     preload: function ()
     {
         alert("Preloader starting");
-        
+        /*
         //Setup and play loading animation
         var bgConfig = {
             key: 'load',
@@ -23,7 +23,7 @@ var preload = new Phaser.Class({
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
         this.bg.anims.play('load');
-        
+        */
         //Load text boxes
         for (var i = 1; i < 46; i++) {
             this.load.image('text'+i, 'assets/text'+ i + '.png');
