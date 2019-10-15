@@ -11,10 +11,10 @@ var scene7 = new Phaser.Class({
     preload: function ()
     {
         //this.load.image('bg_2', 'assets/bg_2.png');
-        //this.load.image('carbroke', 'assets/text28.png');
-        //this.load.image('gottowork', 'assets/text29.png');
-        //this.load.image('misswork', 'assets/text30.png');
-        //this.load.image('fixcar', 'assets/text31.png');
+        //this.load.image('text28', 'assets/text28.png');
+        //this.load.image('text29', 'assets/text29.png');
+        //this.load.image('text30', 'assets/text30.png');
+        //this.load.image('text31', 'assets/text31.png');
     },
 
     create: function ()
@@ -27,19 +27,19 @@ var scene7 = new Phaser.Class({
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 
-        this.carbroke = this.add.sprite(500, 200, 'carbroke');
+        this.carbroke = this.add.sprite(500, 200, 'text28');
         this.carbroke.setScale(0.5);
         this.carbroke.visible = false;
 
-        this.gottowork = this.add.sprite(500, 200, 'gottowork');
+        this.gottowork = this.add.sprite(500, 200, 'text29');
         this.gottowork.setScale(0.5);
         this.gottowork.visible = false;
 
-        this.misswork = this.add.sprite(500, 200, 'misswork');
+        this.misswork = this.add.sprite(500, 200, 'text30');
         this.misswork.setScale(0.5);
         this.misswork.visible = false;
 
-        this.fixcar = this.add.sprite(100, 200, 'fixcar');
+        this.fixcar = this.add.sprite(100, 200, 'text31');
         this.fixcar.setScale(0.5);
         this.fixcar.visible = false;
 

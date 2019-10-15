@@ -11,8 +11,8 @@ var scene11 = new Phaser.Class({
     preload: function ()
     {
         //this.load.image('bg_2', 'assets/bg_2.png');
-        //this.load.image('highpay', 'assets/text38.png');
-        //this.load.image('lowpay', 'assets/text39.png');
+        //this.load.image('text38', 'assets/text38.png');
+        //this.load.image('text39', 'assets/text39.png');
     },
 
     create: function ()
@@ -24,11 +24,11 @@ var scene11 = new Phaser.Class({
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 
-        this.highpay = this.add.sprite(300, 200, 'highpay');	
+        this.highpay = this.add.sprite(300, 200, 'text38');	
         this.highpay.setScale(0.7);
         this.highpay.visible = false;
 
-        this.lowpay = this.add.sprite(300, 200, 'lowpay');	
+        this.lowpay = this.add.sprite(300, 200, 'text39');	
         this.lowpay.setScale(0.7);
         this.lowpay.visible = false;
 

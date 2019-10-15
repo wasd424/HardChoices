@@ -11,9 +11,9 @@ var rentScene = new Phaser.Class({
     preload: function ()
     {
         //this.load.image('bg_1', 'assets/bg_1.png');
-        //this.load.image('dontPayRent', 'assets/text41.png');
-        //this.load.image('payRent', 'assets/text40.png');
-        //this.load.image('eviction', 'assets/text42.png');
+        //this.load.image('text41', 'assets/text41.png');
+        //this.load.image('text40', 'assets/text40.png');
+        //this.load.image('text42', 'assets/text42.png');
     },
 
     create: function ()
@@ -31,11 +31,11 @@ var rentScene = new Phaser.Class({
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 
-        this.payRent = this.add.sprite(130, 200, 'payRent');	
+        this.payRent = this.add.sprite(130, 200, 'text40');	
         this.payRent.setScale(0.9);
-        this.dontPayRent = this.add.sprite(500, 200, 'dontPayRent');	
+        this.dontPayRent = this.add.sprite(500, 200, 'text41');	
         this.dontPayRent.setScale(0.7);
-        this.eviction = this.add.sprite(320, 200, 'eviction');	
+        this.eviction = this.add.sprite(320, 200, 'text42');	
         this.eviction.setScale(0.7);
         this.eviction.visible = false;
         this.startTime = 1;

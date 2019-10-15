@@ -25,11 +25,11 @@ var scene8 = new Phaser.Class({
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 
-        this.gotloan = this.add.sprite(500, 200, 'gotloan');
+        this.gotloan = this.add.sprite(500, 200, 'text33');
         this.gotloan.setScale(0.7);
         this.gotloan.visible = false;
 
-        this.noloan = this.add.sprite(500, 200, 'noloan');
+        this.noloan = this.add.sprite(500, 200, 'text32');
         this.noloan.setScale(0.7);
         this.noloan.visible = false;
 

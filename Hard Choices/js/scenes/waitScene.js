@@ -9,8 +9,8 @@ var waitScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.image('wait', 'assets/text45.png');
-        this.load.image('bg_1', 'assets/bg_1.png');
+        //this.load.image('text45', 'assets/text45.png');
+        //this.load.image('bg_1', 'assets/bg_1.png');
     },
 
     create: function ()
@@ -20,7 +20,7 @@ var waitScene = new Phaser.Class({
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
         console.log("waitScene")
-        this.wait = this.add.sprite(320, 180, 'wait');
+        this.wait = this.add.sprite(320, 180, 'text45');
         this.wait.setScale(0.7);
 
         this.startTime = 0;

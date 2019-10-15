@@ -43,5 +43,3 @@ var dice = {
         return randomNumber;
     }
 }
-
-

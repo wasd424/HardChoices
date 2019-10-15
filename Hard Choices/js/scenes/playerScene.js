@@ -9,7 +9,7 @@ var playerScene = new Phaser.Class({
 
     preload: function ()
     {
-        this.load.spritesheet('player', 'assets/player.png', { frameWidth: 64, frameHeight: 102, endFrame: 3});
+        //this.load.spritesheet('player', 'assets/player.png', { frameWidth: 64, frameHeight: 102, endFrame: 3});
     },
 
     create: function ()

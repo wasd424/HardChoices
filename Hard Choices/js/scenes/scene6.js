@@ -10,14 +10,14 @@ var scene6 = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('callfriend', 'assets/text23.png');
+        //this.load.image('text23', 'assets/text23.png');
         //this.load.image('text10', 'assets/text10.png');
         //this.load.image('bg_2', 'assets/bg_2.png');
         //this.load.image('text16', 'assets/text16.png');
-        //this.load.image('buycar', 'assets/text24.png');
-        //this.load.image('trycar', 'assets/text25.png');
-        //this.load.image('getloan', 'assets/text26.png');
-        //this.load.image('takecar', 'assets/text27.png');
+        //this.load.image('text24', 'assets/text24.png');
+        //this.load.image('text25', 'assets/text25.png');
+        //this.load.image('text26', 'assets/text26.png');
+        //this.load.image('text27', 'assets/text27.png');
     },
 
     create: function ()
@@ -27,7 +27,7 @@ var scene6 = new Phaser.Class({
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
         console.log("scene6");
-        this.callfriend = this.add.sprite(100, 200, 'callfriend');
+        this.callfriend = this.add.sprite(100, 200, 'text23');
         this.callfriend.setScale(0.7);
 
         this.text16 = this.add.sprite(500, 200, 'text16');
@@ -35,17 +35,17 @@ var scene6 = new Phaser.Class({
         this.text16.visible = false;
 
         if (hasCar) { // you already bought a car
-            this.takecar = this.add.sprite(500, 200, 'takecar');
+            this.takecar = this.add.sprite(500, 200, 'text27');
             this.takecar.setScale(0.5);
         } else {
-            this.trycar = this.add.sprite(500, 200, 'trycar');
+            this.trycar = this.add.sprite(500, 200, 'text25');
             this.trycar.setScale(0.7);
         }
-        this.buycar = this.add.sprite(100, 200, 'buycar');
+        this.buycar = this.add.sprite(100, 200, 'text24');
         this.buycar.setScale(0.4);
         this.buycar.visible = false;
 
-        this.getloan = this.add.sprite(500, 200, 'getloan');
+        this.getloan = this.add.sprite(500, 200, 'text26');
         this.getloan.setScale(0.7);
         this.getloan.visible = false;
 

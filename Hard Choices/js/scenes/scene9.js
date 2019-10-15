@@ -11,10 +11,10 @@ var scene9 = new Phaser.Class({
     preload: function ()
     {
         //this.load.image('bg_2', 'assets/bg_2.png');
-        //this.load.image('publictrans', 'assets/text34.png');
-        //this.load.image('callfriend', 'assets/text23.png');
-        //this.load.image('friendcancels', 'assets/text35.png');
-        //this.load.image('frienddrives', 'assets/text36.png');
+        //this.load.image('text34', 'assets/text34.png');
+        //this.load.image('text23', 'assets/text23.png');
+        //this.load.image('text35', 'assets/text35.png');
+        //this.load.image('text36', 'assets/text36.png');
 
 
     },
@@ -30,18 +30,18 @@ var scene9 = new Phaser.Class({
         this.background.setOrigin(0,0);
         this.background.setScale(0.65);
 
-        this.publictrans = this.add.sprite(100, 200, 'publictrans');
+        this.publictrans = this.add.sprite(100, 200, 'text34');
         this.publictrans.setScale(0.6);
 
-        this.friendcancels = this.add.sprite(100, 200, 'friendcancels');
+        this.friendcancels = this.add.sprite(100, 200, 'text35');
         this.friendcancels.setScale(0.7);
         this.friendcancels.visible = false;
 
-        this.frienddrives = this.add.sprite(100, 200, 'frienddrives');
+        this.frienddrives = this.add.sprite(100, 200, 'text36');
         this.frienddrives.setScale(0.7);
         this.frienddrives.visible = false;
 
-        this.callfriend = this.add.sprite(500, 200, 'callfriend');	
+        this.callfriend = this.add.sprite(500, 200, 'text23');	
         this.callfriend.setScale(0.7);
 
         this.friend = false;

@@ -10,7 +10,7 @@ var scene4 = new Phaser.Class({
 
     preload: function ()
     {
-        //this.load.image('callfriend', 'assets/text23.png');
+        //this.load.image('text23', 'assets/text23.png');
         //this.load.image('text10', 'assets/text10.png');
         //this.load.image('bg_1', 'assets/bg_1.png');
         //this.load.image('text16', 'assets/text16.png');
@@ -25,7 +25,7 @@ var scene4 = new Phaser.Class({
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
 
-        this.text11 = this.add.sprite(100, 200, 'callfriend');
+        this.text11 = this.add.sprite(100, 200, 'text23');
         this.text11.setScale(0.7);
 
         this.text12 = this.add.sprite(500, 200, 'text10');

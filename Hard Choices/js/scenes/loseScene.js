@@ -12,9 +12,6 @@ var loseScene = new Phaser.Class({
     {
         //this.load.image('bg_1', 'assets/bg_1.png');
         //this.load.image('text21', 'assets/text21.png');
-        //this.load.image('moral1', 'assets/text43.png');
-        //this.load.image('moral2', 'assets/text44.png');
-
 
     },
 

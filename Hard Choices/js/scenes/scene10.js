@@ -11,7 +11,7 @@ var scene10 = new Phaser.Class({
     preload: function ()
     {
         //this.load.image('bg_3', 'assets/bg_3.png');
-        //this.load.image('fired', 'assets/text37.png');
+        //this.load.image('text37', 'assets/text37.png');
     },
 
     create: function ()
@@ -26,7 +26,7 @@ var scene10 = new Phaser.Class({
         this.officebg.setOrigin(0,0);
         this.officebg.setScale(0.5);
 
-        this.fired = this.add.sprite(500, 200, 'fired');	
+        this.fired = this.add.sprite(500, 200, 'text37');	
         this.fired.setScale(0.7);
 
         var bossConfig1 = {

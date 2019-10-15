@@ -9,97 +9,44 @@ var preload = new Phaser.Class({
 
     preload: function ()
     {
-        this.loadAssets(this.cache.json.get('assets'));
-        this.bg = this.add.spritesheet(0,0, 'bg', { frameWidth: 1154, frameHeight: 570, endFrame: 2});
-        this.bg.setOrigin(0,0);
-        this.bg.setScale(0.65);
+        console.log("Preloader starting");
         
+        //Setup and play loading animation
         var bgConfig = {
             key: 'load',
-            frames: this.anims.generateFrameNumbers('bg', { start: 0, end: 2, first: 0}),
+            frames: this.anims.generateFrameNumbers('loading', { start: 0, end: 2, first: 0}),
             repeat: -1,
             frameRate: 5
         };
-        //loadAssets() is from https://github.com/johwiese/Phaser3-Loading-screen-asset-organization/blob/master/src/scenes/preload.js
-        loadAssets (json)
-    {
-        Object.keys(json).forEach(function (group)
-        {
-            Object.keys(json[group]).forEach(function (key)
-            {
-                let value = json[group][key];
-
-                if (group === 'atlas' ||
-                    group === 'unityAtlas' ||
-                    group === 'bitmapFont' ||
-                    group === 'spritesheet' ||
-                    group === 'multiatlas')
-                {
-
-                    // atlas:ƒ       (key, textureURL,  atlasURL,  textureXhrSettings, atlasXhrSettings)
-                    // unityAtlas:ƒ  (key, textureURL,  atlasURL,  textureXhrSettings, atlasXhrSettings)
-                    // bitmapFont ƒ  (key, textureURL,  xmlURL,    textureXhrSettings, xmlXhrSettings)
-                    // spritesheet:ƒ (key, url,         config,    xhrSettings)
-                    // multiatlas:ƒ  (key, textureURLs, atlasURLs, textureXhrSettings, atlasXhrSettings)
-                    this.load[group](key, value[0], value[1]);
-
-                }
-                else if (group === 'audio')
-                {
-
-                    // do not add mp3 unless, you bought a license ;) 
-                    // opus, webm and ogg are way better than mp3
-                    if (value.hasOwnProperty('opus') && this.sys.game.device.audio.opus)
-                    {
-                        this.load[group](key, value['opus']);
-
-                    }
-                    else if (value.hasOwnProperty('webm') && this.sys.game.device.audio.webm)
-                    {
-                        this.load[group](key, value['webm']);
-
-                    }
-                    else if (value.hasOwnProperty('ogg') && this.sys.game.device.audio.ogg)
-                    {
-                        this.load[group](key, value['ogg']);
-
-                    }
-                    else if (value.hasOwnProperty('wav') && this.sys.game.device.audio.wav)
-                    {
-                        this.load[group](key, value['wav']);
-                    }
-                }
-                else if (group === 'html')
-                {
-                    // html:ƒ (key, url, width, height, xhrSettings)
-                    this.load[group](key, value[0], value[1], value[2]);
-
-                }
-                else
-                {
-                    // animation:ƒ (key, url, xhrSettings)
-                    // binary:ƒ (key, url, xhrSettings)
-                    // glsl:ƒ (key, url, xhrSettings)
-                    // image:ƒ (key, url, xhrSettings)
-                    // image:ƒ (key, [url, normal-url], xhrSettings)
-                    // json:ƒ (key, url, xhrSettings)
-                    // plugin:ƒ (key, url, xhrSettings)
-                    // script:ƒ (key, url, xhrSettings)
-                    // svg:ƒ (key, url, xhrSettings)
-                    // text:ƒ (key, url, xhrSettings)
-                    // tilemapCSV:ƒ (key, url, xhrSettings)
-                    // tilemapTiledJSON:ƒ (key, url, xhrSettings)
-                    // tilemapWeltmeister:ƒ (key, url, xhrSettings)
-                    // xml:ƒ (key, url, xhrSettings)
-                    this.load[group](key, value);
-                }
-            }, this);
-        }, this);
-    }
+        this.anims.create(bgConfig);
+        this.bg = this.add.sprite(0,0, 'loading');
+        this.bg.setOrigin(0,0);
+        this.bg.setScale(0.65);
+        this.bg.anims.play('load');
+        
+        //Load text boxes
+        for (var i = 1; i < 46 i++) {
+            this.load.image('text'+i, 'assets/text'+ i + '.png');
+        }
+        
+        //Load backgrounds
+        for (var i = 1; i < 4; i++) {
+            this.load.image('bg_'+i, 'assets/bg_'+ i + '.png');
+        }
+        
+        //Load intro and title
+        this.load.image('intro', 'intro.png');
+        this.load.image('title', 'title.png');
+    
+        //Load spritesheets
+        this.load.spritesheet('player', 'assets/player.png', { frameWidth: 64, frameHeight: 102, endFrame: 3});
+        this.load.spritesheet('boss', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
+        this.load.spritesheet('boss2', 'assets/bossman.png', { frameWidth: 274, frameHeight: 256, endFrame: 2});
     },
 
     create: function ()
     {
+        console.log('Preloader Complete');
         this.scene.start('titleScreen');
     }
 });
