@@ -14,6 +14,14 @@
   opacity:1;
 }
 
+.purpose:before {
+    background:url("bg_2.png") no-repeat center center fixed;
+  background-size: 130%;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 130%; width: 100%;
+  opacity:1;
+}
+
 body {
     background: oldlace;
     font-family: 'Open sans';
