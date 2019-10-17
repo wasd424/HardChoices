@@ -1,21 +1,43 @@
+.home:before {
+  background:url("bg_1.png") no-repeat center center fixed;
+  background-size: 170%;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 170%; width: 100%;
+  opacity:.5;
+}
+
+.about:before {
+  background:url("https://www.gettingsmart.com/wp-content/uploads/2018/04/22bb56f1-457f-41d4-a67a-58b8b398f154_pasted20image200.png") no-repeat center center fixed;
+  background-size: 130%;
+  display: block; content:""; position: absolute; z-index:-1;
+  top:0; left: 0; right: 0; height: 130%; width: 100%;
+  opacity:1;
+}
+
 body {
     background: oldlace;
-    font-family: 'Comic Sans MS';
+    font-family: 'Open sans';
     margin: 0px;
 }
 
+.p1main {
+    border: groove darkgray 10px;
+    background: oldlace;
+    margin: 80px 75px 20px 75px;
+}
+
 p {
-    font-variant: small-caps;
+
 }
 
 .main {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .navWrapper {
     position: fixed;
     display: inline-block;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     background: darkgreen;
     padding: 0px;
     margin: 0px;
@@ -32,7 +54,7 @@ p {
     color:white;
     text-align: center;
     height:30px;
-    padding: 4px;
+    padding: 10px;
     float: left;
 }
 .navWrapper a:hover {
@@ -53,11 +75,14 @@ canvas {
 }
 
 .p3ContentWrapper {
-    margin-left: 20px;
+    margin: 70px 20px 0px 20px;
+    border: darkgray groove 10px;
+    background: white;
+    padding: 20px;
 }
 
 .p3innerContent {
-    margin: 30px;
+    margin-left: 30px;
 }
 
 .navLogo {
@@ -66,7 +91,7 @@ canvas {
     height: 30px;
     text-align: center;
     width: 34%;
-    margin: 0px;
+    font-size: 35px;
 }
 .navButtons {
     float: left;
