@@ -34,10 +34,6 @@ body {
     margin: 80px 75px 20px 75px;
 }
 
-p {
-
-}
-
 .main {
     margin-top: 70px;
 }
@@ -45,7 +41,7 @@ p {
     position: fixed;
     display: inline-block;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     background: darkgreen;
     padding: 0px;
     margin: 0px;
@@ -61,7 +57,7 @@ p {
     text-decoration: none;
     color:white;
     text-align: center;
-    height:30px;
+    height:25px;
     padding: 10px;
     float: left;
 }
