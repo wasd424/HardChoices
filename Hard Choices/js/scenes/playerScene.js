@@ -23,7 +23,7 @@ var playerScene = new Phaser.Class({
             key: 'walk',
             frames: this.anims.generateFrameNumbers('player', { start: 0, end: 3, first: 0}),
             repeat: -1,
-            frameRate: 5
+            frameRate: 7
             
         };
 
@@ -56,7 +56,7 @@ var playerScene = new Phaser.Class({
             this.player.flipX = true;
             this.player.x -= 4;
         } else {
-            this.player.anims.pause();
+            this.player.anims.pause(this.player.anims.currentAnim.frames[1]);
         }
 
         if (this.player.x > 370 && !this.startCountdown) {
