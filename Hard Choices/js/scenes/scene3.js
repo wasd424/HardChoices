@@ -10,6 +10,7 @@ var scene3 = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'scene3';
         this.load.image('text12', 'assets/text12.png');
         this.load.image('text11', 'assets/text11.png');
         this.load.image('bg_1', 'assets/bg_1.png');
@@ -17,7 +18,6 @@ var scene3 = new Phaser.Class({
 
     create: function ()
     {
-        currentScene = 3;
         this.bg = this.add.sprite(0,0, 'bg_1');
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);

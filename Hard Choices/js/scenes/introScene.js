@@ -9,6 +9,7 @@ var introScene = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'introScene';
         this.load.image('intro', 'assets/intro.png');
     },
 

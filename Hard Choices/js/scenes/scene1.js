@@ -10,6 +10,7 @@ var scene1 = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'scene1';
         this.load.image('text5', 'assets/text5.png');
         this.load.image('bg_1', 'assets/bg_1.png');
     },
@@ -24,8 +25,6 @@ var scene1 = new Phaser.Class({
         this.text5 = this.add.sprite(500, 200, 'text5');
         this.text5.setScale(0.7);
         this.text5.setInteractive();
-
-        currentScene = 1;
     },
     update: function () {
         if (whichOption != 0) {

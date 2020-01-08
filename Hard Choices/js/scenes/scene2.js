@@ -10,14 +10,14 @@ var scene2 = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'scene2';
         this.load.image('text7', 'assets/text7.png');
         this.load.image('text4', 'assets/text4.png');
         this.load.image('bg_1', 'assets/bg_1.png');
     },
 
     create: function ()
-    {
-        currentScene = 2;
+    { 
         this.gotJob = false;
         console.log("scene2")
         this.bg = this.add.sprite(0,0, 'bg_1');

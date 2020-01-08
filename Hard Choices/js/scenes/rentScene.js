@@ -10,6 +10,7 @@ var rentScene = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'rentScene';
         this.load.image('bg_1', 'assets/bg_1.png');
         this.load.image('text41', 'assets/text41.png');
         this.load.image('text40', 'assets/text40.png');

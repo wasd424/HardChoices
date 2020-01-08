@@ -9,6 +9,7 @@ var titleScene = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'titleScene';
         this.load.image('title', 'assets/title.png');
     },
 

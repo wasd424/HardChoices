@@ -12,9 +12,9 @@ var highPayJob = false;
 var timeUntilChoice = 5;
 var hasCar = false;
 var strikes = 0;
-var currentScene = 0;
 var evictionProb = 1;
-var nextScene;
+var nextScene = 'scene1';
+var currentScene = '';
 var hasJob = false;
 var monthsToWait;
 var hasLoan = false;
@@ -33,6 +33,9 @@ let config = {
 // create a new game, pass the configuration
 let game = new Phaser.Game(config);
 
+function setStrikes(newStrikes) {
+    strikes = newStrikes;
+}
 
 //dice code
 var dice = {

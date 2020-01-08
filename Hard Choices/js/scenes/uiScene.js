@@ -61,10 +61,58 @@ var uiScene = new Phaser.Class({
             fill: '#000000'
         });
         this.countdown.visible = false;
+
+        this.devMenu = this.add.text(200, 100, 'This is the dev menu\n Levels:', {
+            font: '20px Calibri',
+            fill: '#000000',
+            backgroundColor: '#00FF00'
+        });
+        
+        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
+            font: '15px Calibri',
+            fill: '#000000',
+            backgroundColor: '#00FF00'
+        });
+
+        this.jobApplySceneButton.setInteractive();
+
+        this.jobApplySceneButton.on('clicked', function(){
+            this.scene.start('scene1');
+        }, this);
+
+        /*this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
+            font: '15px Calibri',
+            fill: '#000000',
+            backgroundColor: '#00FF00'
+        });
+
+        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
+            font: '15px Calibri',
+            fill: '#000000',
+            backgroundColor: '#00FF00'
+        });
+
+        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
+            font: '15px Calibri',
+            fill: '#000000',
+            backgroundColor: '#00FF00'
+        });*/
+
+        devKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q);
     },
 
     update: function (time, delta) {
         this.scene.bringToTop();
+
+        if(devKey.isDown) {
+            //Bring up dev menu
+            this.scene.stop(currentScene);
+            this.scene.launch('scene1');
+            this.devMenu.visible = true;
+        } else {
+            this.devMenu.visible = false;
+        }
+
         if (!isIntro) {
             this.monthUI.visible = true;
             this.savingsUI.visible = true;

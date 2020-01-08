@@ -10,6 +10,7 @@ var scene4 = new Phaser.Class({
 
     preload: function ()
     {
+        currentScene = 'scene4';
         this.load.image('text23', 'assets/text23.png');
         this.load.image('text10', 'assets/text10.png');
         this.load.image('bg_1', 'assets/bg_1.png');
@@ -19,7 +20,6 @@ var scene4 = new Phaser.Class({
 
     create: function ()
     {
-        currentScene = 4;
         console.log("scene4");
         this.bg = this.add.sprite(0,0, 'bg_1');
         this.bg.setOrigin(0,0);
