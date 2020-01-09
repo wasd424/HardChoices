@@ -37,11 +37,9 @@ var waitScene = new Phaser.Class({
 
         if (!this.isStart && (time - this.startTime) > 3000) {
             monthsToWait--;
-            if (monthsToWait == 0){
+            if (monthsToWait <= 0){
                 nextScene = 'scene1';
-            }
-            else
-            {
+            } else {
                 nextScene = 'waitScene';
             }
             this.scene.start('rentScene');

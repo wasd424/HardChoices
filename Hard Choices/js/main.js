@@ -16,7 +16,7 @@ var evictionProb = 1;
 var nextScene = 'scene1';
 var currentScene = '';
 var hasJob = false;
-var monthsToWait;
+var monthsToWait = 3;
 var hasLoan = false;
 var timeStarted = false;
 var carBroke = false;
