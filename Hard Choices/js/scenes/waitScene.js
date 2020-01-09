@@ -16,7 +16,6 @@ var waitScene = new Phaser.Class({
 
     create: function ()
     {
-        currentScene = 102;
         this.bg = this.add.sprite(0,0, 'bg_1');
         this.bg.setOrigin(0,0);
         this.bg.setScale(0.65);
@@ -38,12 +37,12 @@ var waitScene = new Phaser.Class({
 
         if (!this.isStart && (time - this.startTime) > 3000) {
             monthsToWait--;
-            if (monthsToWait==0){
-                nextScene='scene1';
+            if (monthsToWait == 0){
+                nextScene = 'scene1';
             }
             else
             {
-                nextScene= 'waitScene'
+                nextScene = 'waitScene';
             }
             this.scene.start('rentScene');
         }

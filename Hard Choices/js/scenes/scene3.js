@@ -32,7 +32,7 @@ var scene3 = new Phaser.Class({
     update: function () {
 
         if (whichOption == 1) {
-            monthsToWait = dice.roll(1);
+            monthsToWait = dice.roll();
             highPayJob = true;
             whichOption = 0;
             this.scene.start('waitScene');
