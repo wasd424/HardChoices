@@ -48,13 +48,13 @@ var uiScene = new Phaser.Class({
             font: '20px Calibri',
             fill: '#000000'
         });
-        this.optionChosen.visible = false; 
+        this.optionChosen.visible = false; */
 
         this.diceRoll = this.add.text(480, 100, 'Months to wait ' + lastRoll, {
             font: '20px Calibri',
             fill: '#000000'
         });
-        this.diceRoll.visible = false;*/
+        this.diceRoll.visible = true;
 
         this.countdown = this.add.text(480, 150, 'Countdown: ' + timeUntilChoice + 's', {
             font: '20px Calibri',
@@ -62,55 +62,75 @@ var uiScene = new Phaser.Class({
         });
         this.countdown.visible = false;
 
-        this.devMenu = this.add.text(200, 100, 'This is the dev menu\n Levels:', {
-            font: '20px Calibri',
-            fill: '#000000',
-            backgroundColor: '#00FF00'
-        });
-        
-        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
-            font: '15px Calibri',
-            fill: '#000000',
-            backgroundColor: '#00FF00'
-        });
-
-        this.jobApplySceneButton.setInteractive();
-
-        this.jobApplySceneButton.on('clicked', function(){
-            this.scene.start('scene1');
-        }, this);
-
-        /*this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
-            font: '15px Calibri',
-            fill: '#000000',
-            backgroundColor: '#00FF00'
-        });
-
-        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
-            font: '15px Calibri',
-            fill: '#000000',
-            backgroundColor: '#00FF00'
-        });
-
-        this.jobApplySceneButton = this.add.text(200, 130, 'JobApply', {
-            font: '15px Calibri',
-            fill: '#000000',
-            backgroundColor: '#00FF00'
-        });*/
-
-        devKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q);
+        scene1Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ONE);
+        scene2Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.TWO);
+        scene3Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.THREE);
+        scene4Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.FOUR);
+        scene5Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.FIVE);
+        scene6Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SIX);
+        scene7Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SEVEN);
+        scene8Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.EIGHT);
+        scene9Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.NINE);
+        scene10Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ZERO);
+        scene11Key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q);
+        introSceneKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
+        loseSceneKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+        moralSceneKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.T);
+        rentSceneKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Y);
+        waitSceneKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.U);
     },
 
     update: function (time, delta) {
         this.scene.bringToTop();
 
-        if(devKey.isDown) {
-            //Bring up dev menu
+        if(scene1Key.isDown) {
             this.scene.stop(currentScene);
             this.scene.launch('scene1');
-            this.devMenu.visible = true;
-        } else {
-            this.devMenu.visible = false;
+        } else if(scene2Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene2');
+        } else if(scene3Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene3');
+        } else if(scene4Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene4');
+        } else if(scene5Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene5');
+        } else if(scene6Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene6');
+        } else if(scene7Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene7');
+        } else if(scene8Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene8');
+        } else if(scene9Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene9');
+        } else if(scene10Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene10');
+        } else if(scene11Key.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('scene11');
+        } else if(introSceneKey.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('introScene');
+        } else if(loseSceneKey.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('loseScene');
+        } else if(moralSceneKey.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('moralScene');
+        } else if(rentSceneKey.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('rentScene');
+        } else if(waitSceneKey.isDown) {
+            this.scene.stop(currentScene);
+            this.scene.launch('waitScene');
         }
 
         if (!isIntro) {
@@ -139,7 +159,7 @@ var uiScene = new Phaser.Class({
         this.monthUI.setText("Month: " + month);
         this.savingsUI.setText("Savings: $" + savings);
         //this.optionChosen.setText("Option Chosen: " + whichOption);
-        //this.diceRoll.setText("Months to wait " + lastRoll);
+        this.diceRoll.setText("Months to wait " + monthsToWait);
         this.countdown.setText("Countdown: " + timeUntilChoice + 's');
         this.strikesUI.setText("Strikes: " + strikes + '/3');
     }

@@ -41,7 +41,7 @@ var playerScene = new Phaser.Class({
     },
 
     update: function (time, delta) {
-        if (currentScene == 5 || currentScene == 10) {
+        if (currentScene == 'scene5' || currentScene == 'scene10') {
             this.player.visible = false;
         } else if (!isIntro) {
             this.player.visible = true;
