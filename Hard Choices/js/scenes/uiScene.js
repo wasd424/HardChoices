@@ -48,13 +48,13 @@ var uiScene = new Phaser.Class({
             font: '20px Calibri',
             fill: '#000000'
         });
-        this.optionChosen.visible = false; */
+        this.optionChosen.visible = false; 
 
         this.diceRoll = this.add.text(480, 100, 'Months to wait ' + lastRoll, {
             font: '20px Calibri',
             fill: '#000000'
         });
-        this.diceRoll.visible = true;
+        this.diceRoll.visible = true;*/
 
         this.countdown = this.add.text(480, 150, 'Countdown: ' + timeUntilChoice + 's', {
             font: '20px Calibri',
@@ -159,7 +159,7 @@ var uiScene = new Phaser.Class({
         this.monthUI.setText("Month: " + month);
         this.savingsUI.setText("Savings: $" + savings);
         //this.optionChosen.setText("Option Chosen: " + whichOption);
-        this.diceRoll.setText("Months to wait " + monthsToWait);
+        //this.diceRoll.setText("Months to wait " + monthsToWait);
         this.countdown.setText("Countdown: " + timeUntilChoice + 's');
         this.strikesUI.setText("Strikes: " + strikes + '/3');
     }
